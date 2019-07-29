@@ -1,0 +1,14 @@
+a {
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  background: #d34a4a;
+}
+
+div {
+  height: 40px;
+}
