@@ -1,0 +1,11 @@
+<form [formGroup]="myForm" (ngSubmit)="send()">
+  <input type="radio" formControlName="destenation" value="new-income" />
+  Income
+  <input type="radio" formControlName="destenation" value="new-donation" />
+  Donation
+
+  <input type="text" formControlName="description" placeholder="description" />
+  <input type="number" formControlName="sum" placeholder="sum" />
+  <input type="submit" value="submit" />
+</form>
+<p>{{ myForm.value | json }}</p>

@@ -1,0 +1,17 @@
+<div class="maaser">
+  <h1>maaser is: {{ localMaaser }}</h1>
+</div>
+
+<div class="last-donations dom">
+  <h3>last-donations</h3>
+  <ul>
+    <li *ngFor="let d of localDonationsArr">{{ d.sum }}, {{ d.description }}</li>
+  </ul>
+</div>
+
+<div class="last-incomes dom">
+  <h3>last-incomes</h3>
+  <ul>
+    <li *ngFor="let i of localIncomesArr">{{ i.sum }}, {{ i.description }}</li>
+  </ul>
+</div>

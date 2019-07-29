@@ -1,0 +1,8 @@
+<button (click)="getDonations()">get donations</button>
+<button (click)="getIncomes()">get incomes</button>
+
+<div *ngFor="let s of localArr">
+  <h1>{{ s.sum }}</h1>
+  <h1>{{ s.description }}</h1>
+  <h4>{{ s.date | date }}</h4>
+</div>
